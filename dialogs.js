@@ -26,27 +26,27 @@ const initializeDetailButtonEvents = () => {
           theDialog.showModal()
       }
   )
-//Details on city3
-  document.querySelector("#button--bang").addEventListener(
+//Details on Pattaya City
+  document.querySelector("#button--pattaya").addEventListener(
       "click",
       theClickEvent => {
-          const theDialog = document.querySelector("#details__bang")
+          const theDialog = document.querySelector("#details__pattaya")
           theDialog.showModal()
       }
   )
-//Details on Bangkok
-  document.querySelector("#button--bang").addEventListener(
+//Details on Phra
+  document.querySelector("#button--phra").addEventListener(
       "click",
       theClickEvent => {
-          const theDialog = document.querySelector("#details__bang")
+          const theDialog = document.querySelector("#details__phra")
           theDialog.showModal()
       }
   )
-//Details on Bangkok
-  document.querySelector("#button--bang").addEventListener(
+//Details on Chiang Rai
+  document.querySelector("#button--rai").addEventListener(
       "click",
       theClickEvent => {
-          const theDialog = document.querySelector("#details__bang")
+          const theDialog = document.querySelector("#details__rai")
           theDialog.showModal()
       }
   )
