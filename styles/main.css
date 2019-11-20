@@ -1,3 +1,4 @@
 .cities__card{
   border: 1px solid black;
 }
+@import 'nav.css'

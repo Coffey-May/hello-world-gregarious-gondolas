@@ -26,7 +26,7 @@ const initializeDetailButtonEvents = () => {
           theDialog.showModal()
       }
   )
-//Details on Bangkok
+//Details on city3
   document.querySelector("#button--bang").addEventListener(
       "click",
       theClickEvent => {
