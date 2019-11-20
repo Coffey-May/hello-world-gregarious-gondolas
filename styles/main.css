@@ -1,1 +1,5 @@
-@import 'modal.css'
+@import 'modal.css';
+@import 'nav.css' ;
+.cities__card{
+  border: 1px solid black;
+}
