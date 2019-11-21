@@ -27,26 +27,10 @@ const initializeDetailButtonEvents = () => {
         }
     )
   //Details on Pattaya City
-    document.querySelector("#button--dikhil").addEventListener(
+    document.querySelector("#button--djbouti").addEventListener(
         "click",
         theClickEvent => {
-            const theDialog = document.querySelector("#details__dikhil")
-            theDialog.showModal()
-        }
-    )
-  //Details on Phra
-    document.querySelector("#button--arta").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details__arta")
-            theDialog.showModal()
-        }
-    )
-  //Details on Chiang Rai
-    document.querySelector("#button--ali").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details__ali")
+            const theDialog = document.querySelector("#details__djbouti")
             theDialog.showModal()
         }
     )
