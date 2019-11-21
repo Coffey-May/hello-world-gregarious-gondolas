@@ -5,16 +5,3 @@
 .countryName {
     letter-spacing: .75em;
 }
-
-.navIcon {
-    width: 27px;
-    margin-bottom: 6px;
-  }
-
-  .navQuote {
-    display: inline-block;
-    text-align: center;
-    font-style: italic;
-    margin-bottom: 0px;
-    color: white;
-  }
