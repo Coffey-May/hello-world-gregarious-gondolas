@@ -4,4 +4,11 @@
 
 .countryName {
     letter-spacing: .75em;
+    width: 100%;
+    height:auto;
+}
+
+.djboutiPic {
+    width:100%;
+    height: auto;
 }
