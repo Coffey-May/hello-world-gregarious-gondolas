@@ -1,0 +1,20 @@
+.dijBod {
+    background: linear-gradient(white,slategray,rgb(173, 142, 57),rgb(122, 96, 24)),rgb(95, 62, 12);
+}
+
+.countryName {
+    letter-spacing: .75em;
+}
+
+.navIcon {
+    width: 27px;
+    margin-bottom: 6px;
+  }
+
+  .navQuote {
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0px;
+    color: white;
+  }
