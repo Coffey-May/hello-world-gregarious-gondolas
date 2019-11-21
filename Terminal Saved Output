@@ -1,0 +1,1043 @@
+Last login: Thu Nov 14 08:38:06 on ttys000
+➜  ~ cd workspace/lightning-excercises 
+➜  lightning-excercises git:(master) git remote set-url git@github.com:WilliamMetcalf-37/Lightning-Excercises.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+➜  lightning-excercises git:(master) git push -u origin master
+fatal: remote error: 
+  WilliamMetcalf-37/Lightning-Excercises/.git/ is not a valid repository name
+  Email support@github.com for help
+➜  lightning-excercises git:(master) git remote set-url git@github.com:WilliamMetcalf-37/Lightning-Excercises.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+➜  lightning-excercises git:(master) git remote -v
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (fetch)
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (push)
+➜  lightning-excercises git:(master) git remote set-url git@github.com:WilliamMetcalf-37/Lightning-Excercises.git --push
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+➜  lightning-excercises git:(master) git remote -v
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (fetch)
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (push)
+➜  lightning-excercises git:(master) git remote set-url git@github.com:WilliamMetcalf-37/Lightning-Excercises.git       
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+➜  lightning-excercises git:(master) --add
+zsh: command not found: --add
+➜  lightning-excercises git:(master) git remote set-url git@github.com:WilliamMetcalf-37/Lightning-Excercises.git --add
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+➜  lightning-excercises git:(master) git remote -v                                                                      
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (fetch)
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (push)
+➜  lightning-excercises git:(master) clear
+
+➜  lightning-excercises git:(master) git remote -v
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (fetch)
+origin	git@github.com:WilliamMetcalf-37/Lightning-Excercises/.git/ (push)
+➜  lightning-excercises git:(master) git remote remove origin
+➜  lightning-excercises git:(master) git remote add origin git@github.com:WilliamMetcalf-37/Lightning-Excercises.git
+➜  lightning-excercises git:(master) git status
+On branch master
+nothing to commit, working tree clean
+➜  lightning-excercises git:(master) git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.05 KiB | 1.05 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:WilliamMetcalf-37/Lightning-Excercises.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+➜  lightning-excercises git:(master) cd
+➜  ~ cd workspace 
+➜  workspace cd aquarium 
+➜  aquarium git:(master) git checkout -b WGM-aquarium
+Switched to a new branch 'WGM-aquarium'
+➜  aquarium git:(WGM-aquarium) code index.html 
+➜  aquarium git:(WGM-aquarium) git add --all
+➜  aquarium git:(WGM-aquarium) ✗ git commit -m "Changed awful title"
+[WGM-aquarium e9024f3] Changed awful title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  aquarium git:(WGM-aquarium) git push origin WGM-aquarium  
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'WGM-aquarium' on GitHub by visiting:
+remote:      https://github.com/WilliamMetcalf-37/aquarium/pull/new/WGM-aquarium
+remote: 
+To github.com:WilliamMetcalf-37/aquarium.git
+ * [new branch]      WGM-aquarium -> WGM-aquarium
+➜  aquarium git:(WGM-aquarium) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  aquarium git:(master) git pull origin master
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:WilliamMetcalf-37/aquarium
+ * branch            master     -> FETCH_HEAD
+   56af558..1e2e486  master     -> origin/master
+Updating 56af558..1e2e486
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  aquarium git:(master) code index.html 
+➜  aquarium git:(master) cd
+➜  ~ cd workspace 
+➜  workspace cd functions 
+➜  functions git:(master) code practices.js 
+➜  functions git:(master) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-19T21:31:17.477Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:24048) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-19T21:31:17.496Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:31:18.629Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:31:18.631Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:41:12.002Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:12.024Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:12.030Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:12.031Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:41:43.080Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:43.100Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:43.109Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:41:43.110Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  functions git:(master) ✗ code index.html 
+➜  functions git:(master) ✗ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-19T21:43:30.523Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:24137) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-19T21:43:30.548Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:43:30.557Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:43:30.558Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:44:08.248Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:44:08.264Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:44:08.273Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:44:08.274Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:46:48.768Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:46:48.790Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:46:48.798Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:46:48.799Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:48:44.835Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:48:44.855Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:48:44.864Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:48:44.864Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:49:51.583Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:49:51.602Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:49:51.611Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:49:51.611Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:50:35.309Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:50:35.331Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:50:35.338Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:50:35.338Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:52:10.243Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:10.263Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:10.271Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:10.272Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:52:34.609Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:34.629Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:34.636Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:34.636Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:52:43.755Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:43.769Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:43.780Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:43.780Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:52:59.552Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:59.572Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:59.582Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:52:59.582Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:53:20.687Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:53:20.707Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:53:20.716Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:53:20.716Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-19T21:54:36.981Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:54:37.002Z] "GET /practices.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:54:37.012Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-19T21:54:37.012Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  functions git:(master) ✗ clear
+
+➜  functions git:(master) ✗ cd
+➜  ~ cd workspace/lightning-excercises 
+➜  lightning-excercises git:(master) ls
+millenials
+➜  lightning-excercises git:(master) cd
+➜  ~ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  ~ cd workspace 
+➜  workspace git clone git@github.com:nss-cohort-37/practice-github-team-2.git
+Cloning into 'practice-github-team-2'...
+remote: Enumerating objects: 57, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 57 (delta 27), reused 57 (delta 27), pack-reused 0
+Receiving objects: 100% (57/57), 112.26 KiB | 1.29 MiB/s, done.
+Resolving deltas: 100% (27/27), done.
+➜  workspace ls
+CSS101                 aquarium               foundations            html101                omg
+Coffe                  daily-journal          functions              lightning-excercises   practice-github-team-2
+➜  workspace cd practice-github-team-2 
+➜  practice-github-team-2 git:(master) git checkout -b WGM-fish          
+Switched to a new branch 'WGM-fish'
+➜  practice-github-team-2 git:(WGM-fish) code index.html 
+➜  practice-github-team-2 git:(WGM-fish) git add --all
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "added pennywisse the clownfish"
+[WGM-fish bf3c88f] added pennywisse the clownfish
+ 1 file changed, 20 insertions(+)
+➜  practice-github-team-2 git:(WGM-fish) git push origin WGM-fish  
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'WGM-fish' on GitHub by visiting:
+remote:      https://github.com/nss-cohort-37/practice-github-team-2/pull/new/WGM-fish
+remote: 
+To github.com:nss-cohort-37/practice-github-team-2.git
+ * [new branch]      WGM-fish -> WGM-fish
+➜  practice-github-team-2 git:(WGM-fish) git add --all
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "fixed the name!"
+dquote> 
+dquote> q
+dquote> b
+dquote> :q
+dquote> "
+[WGM-fish 51d689d] fixed the name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  practice-github-team-2 git:(WGM-fish) git push origin WGM-fish     
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:nss-cohort-37/practice-github-team-2.git
+   bf3c88f..51d689d  WGM-fish -> WGM-fish
+➜  practice-github-team-2 git:(WGM-fish) git add --all
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "im the worst"
+[WGM-fish 36b2ec0] im the worst
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  practice-github-team-2 git:(WGM-fish) git push origin WGM-fish 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:nss-cohort-37/practice-github-team-2.git
+   51d689d..36b2ec0  WGM-fish -> WGM-fish
+➜  practice-github-team-2 git:(WGM-fish) clear
+
+➜  practice-github-team-2 git:(WGM-fish) git fetch --all
+Fetching origin
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 33 (delta 18), reused 29 (delta 15), pack-reused 0
+Unpacking objects: 100% (33/33), done.
+From github.com:nss-cohort-37/practice-github-team-2
+ * [new branch]      NM-fish    -> origin/NM-fish
+ * [new branch]      hwp-fish   -> origin/hwp-fish
+   f04c19b..ffa59f4  master     -> origin/master
+➜  practice-github-team-2 git:(WGM-fish) git checkout hwp-fish  
+Branch 'hwp-fish' set up to track remote branch 'hwp-fish' from 'origin'.
+Switched to a new branch 'hwp-fish'
+➜  practice-github-team-2 git:(hwp-fish) code .
+➜  practice-github-team-2 git:(hwp-fish) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T15:58:24.505Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:24756) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T15:58:24.523Z] "GET /css/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:24.525Z] "GET /goldie-fish.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:24.526Z] "GET /swede-fish1.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:24.528Z] "GET /main.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.576Z] "GET /css/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.577Z] "GET /css/fish.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.582Z] "GET /highlight.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.582Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.648Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T15:58:25.649Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  practice-github-team-2 git:(hwp-fish) git checkout WGM-fish  
+Switched to branch 'WGM-fish'
+➜  practice-github-team-2 git:(WGM-fish) code
+➜  practice-github-team-2 git:(WGM-fish) code .
+➜  practice-github-team-2 git:(WGM-fish) git add --all
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "made pennywise work properly""
+dquote> 
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "made pennywise work properly" 
+[WGM-fish f5969f8] made pennywise work properly
+ 3 files changed, 8 insertions(+), 2 deletions(-)
+ create mode 100644 pennywise.jpeg
+➜  practice-github-team-2 git:(WGM-fish) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T16:10:22.452Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:24941) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T16:10:22.479Z] "GET /pennywise.jpeg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.298Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.313Z] "GET /css/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.317Z] "GET /goldie-fish.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.318Z] "GET /main.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.319Z] "GET /pennywise.jpeg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.322Z] "GET /css/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.323Z] "GET /css/fish.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.324Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.326Z] "GET /highlight.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.457Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:10:23.457Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  practice-github-team-2 git:(WGM-fish) clear
+
+➜  practice-github-team-2 git:(WGM-fish) git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 8 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+➜  practice-github-team-2 git:(master) git pull
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 7), reused 8 (delta 5), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+From github.com:nss-cohort-37/practice-github-team-2
+   ffa59f4..f6bcd36  master     -> origin/master
+Updating f04c19b..f6bcd36
+Fast-forward
+ .DS_Store       | Bin 0 -> 6148 bytes
+ dialogs.js      |  22 ++++++++++++++++++++++
+ gourami.jpg     | Bin 0 -> 14286 bytes
+ index.html      |  80 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ swede-fish.jpg  | Bin 0 -> 12268 bytes
+ swede-fish1.jpg | Bin 0 -> 199351 bytes
+ 6 files changed, 102 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 gourami.jpg
+ create mode 100644 swede-fish.jpg
+ create mode 100644 swede-fish1.jpg
+➜  practice-github-team-2 git:(master) git checkout WGM-fish  
+Switched to branch 'WGM-fish'
+➜  practice-github-team-2 git:(WGM-fish) git merge master
+Auto-merging index.html
+Auto-merging dialogs.js
+CONFLICT (content): Merge conflict in dialogs.js
+Automatic merge failed; fix conflicts and then commit the result.
+➜  practice-github-team-2 git:(WGM-fish) ✗ code .
+➜  practice-github-team-2 git:(WGM-fish) ✗ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T16:14:07.538Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:25074) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T16:14:07.559Z] "GET /css/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.563Z] "GET /goldie-fish.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.564Z] "GET /main.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.567Z] "GET /css/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.568Z] "GET /css/fish.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.570Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.571Z] "GET /highlight.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.572Z] "GET /gourami.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.574Z] "GET /pennywise.jpeg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.574Z] "GET /swede-fish1.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.736Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T16:14:07.737Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  practice-github-team-2 git:(WGM-fish) ✗ clear
+
+➜  practice-github-team-2 git:(WGM-fish) ✗ git add --all
+➜  practice-github-team-2 git:(WGM-fish) ✗ git commit -m "redid my stuff cause im bad"
+[WGM-fish 9fedec1] redid my stuff cause im bad
+➜  practice-github-team-2 git:(WGM-fish) git push origin WGM-fish  
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 7.97 KiB | 7.97 MiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+remote: 
+remote: Create a pull request for 'WGM-fish' on GitHub by visiting:
+remote:      https://github.com/nss-cohort-37/practice-github-team-2/pull/new/WGM-fish
+remote: 
+To github.com:nss-cohort-37/practice-github-team-2.git
+ * [new branch]      WGM-fish -> WGM-fish
+➜  practice-github-team-2 git:(WGM-fish)                    
+➜  practice-github-team-2 git:(WGM-fish) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  practice-github-team-2 git:(master) git pull origin master
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From github.com:nss-cohort-37/practice-github-team-2
+ * branch            master     -> FETCH_HEAD
+   f6bcd36..eed78b3  master     -> origin/master
+Updating f6bcd36..eed78b3
+Fast-forward
+ dialogs.js     |  15 +++++++++++++++
+ index.html     |   2 +-
+ pennywise.jpeg | Bin 0 -> 7953 bytes
+ 3 files changed, 16 insertions(+), 1 deletion(-)
+ create mode 100644 pennywise.jpeg
+➜  practice-github-team-2 git:(master) git checkout WGM-fish  
+Switched to branch 'WGM-fish'
+➜  practice-github-team-2 git:(WGM-fish) git merge master
+Updating 9fedec1..eed78b3
+Fast-forward
+ dialogs.js | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+➜  practice-github-team-2 git:(WGM-fish) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  practice-github-team-2 git:(master) git pull origin master
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:nss-cohort-37/practice-github-team-2
+ * branch            master     -> FETCH_HEAD
+   eed78b3..a8d7669  master     -> origin/master
+Updating eed78b3..a8d7669
+Fast-forward
+ css/main.css   |  56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ locations.html | 109 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 2 files changed, 161 insertions(+), 4 deletions(-)
+➜  practice-github-team-2 git:(master) git checkout WGM-fish  
+Switched to branch 'WGM-fish'
+➜  practice-github-team-2 git:(WGM-fish) git merge master
+Updating eed78b3..a8d7669
+Fast-forward
+ css/main.css   |  56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ locations.html | 109 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 2 files changed, 161 insertions(+), 4 deletions(-)
+➜  practice-github-team-2 git:(WGM-fish) clear
+
+➜  practice-github-team-2 git:(WGM-fish) cd
+➜  ~ cd workspace 
+➜  workspace git clone git@github.com:nss-cohort-37/hello-world-gregarious-gondolas.git
+Cloning into 'hello-world-gregarious-gondolas'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), 36.95 KiB | 900.00 KiB/s, done.
+➜  workspace cd hello-world-gregarious-gondolas 
+➜  hello-world-gregarious-gondolas git:(master) git checkout -b wgm-hellowworld
+Switched to a new branch 'wgm-hellowworld'
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  hello-world-gregarious-gondolas git:(master) git pull origin master
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:nss-cohort-37/hello-world-gregarious-gondolas
+ * branch            master     -> FETCH_HEAD
+   04dc062..6c52b78  master     -> origin/master
+Updating 04dc062..6c52b78
+Fast-forward
+ index.html      | 20 ++++++++++++++++++++
+ styles/main.css |  0
+ 2 files changed, 20 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles/main.css
+➜  hello-world-gregarious-gondolas git:(master) git checkout wgm-hellowworld  
+Switched to branch 'wgm-hellowworld'
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git merge master
+Updating 04dc062..6c52b78
+Fast-forward
+ index.html      | 20 ++++++++++++++++++++
+ styles/main.css |  0
+ 2 files changed, 20 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles/main.css
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) code .
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git add --all
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ get commit -m "added semantic tags"
+zsh: command not found: get
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git commit -m "added semantic tags"
+[wgm-hellowworld abd726d] added semantic tags
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git push origin wgm-hellowworld  
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 431 bytes | 431.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'wgm-hellowworld' on GitHub by visiting:
+remote:      https://github.com/nss-cohort-37/hello-world-gregarious-gondolas/pull/new/wgm-hellowworld
+remote: 
+To github.com:nss-cohort-37/hello-world-gregarious-gondolas.git
+ * [new branch]      wgm-hellowworld -> wgm-hellowworld
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) clear
+
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) clear
+
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T19:01:54.507Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:25897) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T19:01:54.531Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:01:54.675Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:01:54.676Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:03:26.758Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:03:26.780Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:03:26.867Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:03:26.868Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:05:32.039Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:05:32.061Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:05:32.061Z] "GET /css/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:05:32.062Z] "GET /css/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:05:32.140Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:05:32.141Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:06:06.574Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:06.600Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:06.601Z] "GET /css/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:06.602Z] "GET /css/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:06:06.671Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:06.672Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:06:53.582Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:53.608Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:53.608Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:53.679Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:06:53.680Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T19:09:11.470Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:25972) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T19:09:11.498Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:11.499Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:11.505Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:11.592Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:11.593Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:09:33.351Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:33.376Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:33.377Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:33.381Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:33.465Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:33.465Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:09:49.887Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:49.913Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:49.914Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:49.917Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:49.984Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:09:49.985Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:10:47.302Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:10:47.327Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:10:47.328Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:10:47.332Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:10:47.420Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:10:47.420Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:11:34.812Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:11:34.834Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:11:34.835Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:11:34.838Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:11:34.905Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:11:34.905Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:14:41.236Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.255Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.257Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.258Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.262Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.340Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:14:41.341Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:15:10.250Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.278Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.279Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.282Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.283Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.353Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:15:10.353Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:16:15.912Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:15.938Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:15.939Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:15.940Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:15.942Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:16.034Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:16.035Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:16:44.961Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:44.979Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:44.983Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:44.983Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:44.989Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:45.053Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:16:45.054Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:19:51.224Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:51.245Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:51.246Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:51.247Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:51.251Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:52.226Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:19:52.226Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:20:06.578Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.601Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.602Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.604Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.606Z] "GET /styles/BORK.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.609Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.676Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:20:06.676Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:34:04.315Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.338Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.340Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.341Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.344Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.346Z] "GET /styles/BORK.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.347Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.350Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.447Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:04.447Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:34:45.497Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.519Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.520Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.522Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.523Z] "GET /styles/BORK.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.526Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.527Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.529Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.591Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:34:45.591Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:35:06.241Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.266Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.266Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.268Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.269Z] "GET /styles/BORK.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.272Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.273Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.274Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.338Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:35:06.339Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:43:45.318Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.343Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.343Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.344Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:43:45.345Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.347Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.350Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.353Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.353Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.460Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:43:45.460Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:44:17.531Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.553Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.554Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.554Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:44:17.556Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.557Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.563Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.564Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.566Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.646Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:44:17.647Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:48:17.533Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.560Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.561Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.561Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:48:17.563Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.563Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.566Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.568Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.571Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.640Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:48:17.640Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ clear
+
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git add --all
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git commit -m "added modals for landmarks"
+[wgm-hellowworld 03ff364] added modals for landmarks
+ 8 files changed, 91 insertions(+), 2 deletions(-)
+ create mode 100644 styles/HSW.jpg
+ create mode 100644 styles/KTP.jpg
+ create mode 100644 styles/Maya.jpg
+ create mode 100644 styles/Wat_Rong.jpg
+ create mode 100644 styles/Wat_Rong_Khun.jpg
+ create mode 100644 styles/modal.css
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git fetch --all
+Fetching origin
+remote: Enumerating objects: 42, done.
+remote: Counting objects: 100% (40/40), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 34 (delta 11), reused 30 (delta 9), pack-reused 0
+Unpacking objects: 100% (34/34), done.
+From github.com:nss-cohort-37/hello-world-gregarious-gondolas
+ * [new branch]      jan-feature -> origin/jan-feature
+   6c52b78..c8b2914  master      -> origin/master
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git checkout jan-feature  
+Branch 'jan-feature' set up to track remote branch 'jan-feature' from 'origin'.
+Switched to a new branch 'jan-feature'
+➜  hello-world-gregarious-gondolas git:(jan-feature) code .
+➜  hello-world-gregarious-gondolas git:(jan-feature) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T19:53:02.526Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:26386) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T19:53:02.556Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.557Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.559Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.560Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.646Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.653Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:53:02.654Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(jan-feature) git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 5 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+➜  hello-world-gregarious-gondolas git:(master) git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From github.com:nss-cohort-37/hello-world-gregarious-gondolas
+   c8b2914..d22e815  master     -> origin/master
+Updating 6c52b78..d22e815
+Fast-forward
+ Thailand-Flag-icon.png | Bin 0 -> 51150 bytes
+ dialogs.js             |  55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.html             | 120 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ styles/main.css        |   4 ++++
+ styles/nav.css         |  11 +++++++++++
+ thailand.js            |   2 ++
+ 6 files changed, 187 insertions(+), 5 deletions(-)
+ create mode 100644 Thailand-Flag-icon.png
+ create mode 100644 dialogs.js
+ create mode 100644 styles/nav.css
+ create mode 100644 thailand.js
+➜  hello-world-gregarious-gondolas git:(master) git checkout wgm-hellowworld  
+Switched to branch 'wgm-hellowworld'
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git merger master
+git: 'merger' is not a git command. See 'git --help'.
+
+The most similar command is
+	merge
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git merge master
+Auto-merging styles/main.css
+CONFLICT (content): Merge conflict in styles/main.css
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ code .
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T19:58:38.346Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:26517) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T19:58:38.371Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.372Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.374Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.375Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:58:38.375Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.377Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.378Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.381Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.386Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.460Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.468Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:58:38.469Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T19:59:50.211Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.231Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.231Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.233Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.234Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T19:59:50.236Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.236Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.239Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.240Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.243Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.244Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.245Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.320Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.327Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T19:59:50.328Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T20:00:13.130Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.151Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.152Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.154Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.154Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T20:00:13.156Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.157Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.159Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.161Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.163Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.163Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.170Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.233Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.238Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:00:13.238Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T20:01:20.263Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.284Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.285Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.289Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.289Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.290Z] "GET /styles/Wat_Arun.jpg" Error (404): "Not found"
+[2019-11-20T20:01:20.293Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.293Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.296Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.297Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.299Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.302Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.366Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.374Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:01:20.374Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git add --all
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git commit -m "added modals"
+[wgm-hellowworld 9135981] added modals
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git push origin wgm-hellowworld  
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 1.77 MiB | 4.37 MiB/s, done.
+Total 15 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:nss-cohort-37/hello-world-gregarious-gondolas.git
+   abd726d..9135981  wgm-hellowworld -> wgm-hellowworld
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T20:10:34.205Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:26635) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T20:10:34.233Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git add --all
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ git commit -m "added wat arun picture"
+[wgm-hellowworld c7feee0] added wat arun picture
+ 2 files changed, 3 deletions(-)
+ create mode 100644 styles/Wat_Arun.jpg
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) git push origin wgm-hellowworld 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 186.79 KiB | 8.89 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:nss-cohort-37/hello-world-gregarious-gondolas.git
+   9135981..c7feee0  wgm-hellowworld -> wgm-hellowworld
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) http-server
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://192.168.21.35:8080
+Hit CTRL-C to stop the server
+[2019-11-20T20:34:57.518Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+(node:26723) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[2019-11-20T20:34:57.549Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.550Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.552Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.553Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.555Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.557Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.561Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.561Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.564Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.567Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.862Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.870Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:34:57.871Z] "GET /favicon.ico" Error (404): "Not found"
+[2019-11-20T20:36:18.062Z] "GET /" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.086Z] "GET /styles/main.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.087Z] "GET /Thailand-Flag-icon.png" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.088Z] "GET /thailand.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.089Z] "GET /styles/Wat_Arun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.091Z] "GET /styles/modal.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.092Z] "GET /styles/nav.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.093Z] "GET /styles/Wat_Rong_Khun.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.094Z] "GET /styles/KTP.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.097Z] "GET /styles/HSW.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.101Z] "GET /styles/Maya.jpg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.103Z] "GET /styles/ThailandKing.jpeg" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.176Z] "GET /dialogs.js" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.186Z] "GET /favicon.ico" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+[2019-11-20T20:36:18.186Z] "GET /favicon.ico" Error (404): "Not found"
+^Chttp-server stopped.
+➜  hello-world-gregarious-gondolas git:(wgm-hellowworld) ✗ touch hover.js
