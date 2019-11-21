@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VKI Brochure</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- put your CSS Scripts below here -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img class="navIcon" src="Thailand-Flag-icon.png"> VayKayInt</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
@@ -33,46 +36,49 @@
         </li>
       </ul>
     </div>
-    <p class="d-none d-lg-inline-block navQuote">"One of the dreams on my wishlist is to spend more time in Thailand." -Kevin Kwan</p>
+    <p class="d-none d-lg-inline-block navQuote">"One of the dreams on my wishlist is to spend more time in Thailand."
+      -Kevin Kwan</p>
   </nav>
   <main>
-      <section>
-          <!-- country image -->
-         
-            <div class="picDiv">
-                <center>
-              <img src="https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/destinations/asia/thailand-history-and-culture.jpg" class="picture">
-    
-            </div>
-          
-    
-          <div>
-            <center>
-              <h1 class="countryName">T H A I L A N D</h1>
-              <h4>L a n d&nbsp&nbsp o f&nbsp&nbsp S m i l e s</h4>
-            </center>
-          </div>
-          <!-- country name -->
-        </section>
+    <section>
+      <!-- country image -->
+
+      <div class="picDiv">
+        <center>
+          <img
+            src="https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/destinations/asia/thailand-history-and-culture.jpg"
+            class="picture">
+      </div>
+      <div>
+        <center>
+          <h1 class="countryName">T H A I L A N D</h1>
+          <h4>L a n d&nbsp&nbsp o f&nbsp&nbsp S m i l e s</h4>
+        </center>
+      </div>
+      <!-- country name -->
+    </section>
 
     <!-- cities landmarks and heads of state -->
-    <section>
+    <section class="details">
       <!-- Cities -->
       <article class="details__card">
         <h2>Cities of Thailand</h2>
         <!-- Bangkok Card -->
-        <div class="cities__card__name">Bangkok
-          <button id="button--bang">Learn More</button>
+        <div class="cities__name">
+          <div>Bangkok
+            <button id="button--bang">Learn More</button>
+          </div>
+          <dialog class="dialog__city" id="details__bang">
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <button class="button--close" id="close__bang">Keep Exploring</button>
+          </dialog>
         </div>
-        <dialog class="dialog__city" id="details__bang">
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <button class="button--close" id="close__bang">Keep Exploring</button>
-        </dialog>
         <!-- Chiang Mai Card -->
-        <div class="cities__card__name">Chiang Mai
+        <div class="cities__name">
+            <div>Chiang Mai
           <button id="button--chiang">Learn More</button>
         </div>
         <dialog class="dialog__city" id="details__chiang">
@@ -82,63 +88,72 @@
           <div>Population: 100</div>
           <button class="button--close" id="close__chiang">Keep Exploring</button>
         </dialog>
+        </div>
         <!-- Pattaya City -->
-        <div class="cities__card__name">Pattaya City
-          <button id="button--pattaya">Learn More</button>
+        <div class="cities__name">
+          <div>Pattaya City
+            <button id="button--pattaya">Learn More</button>
+          </div>
+          <dialog class="dialog__city" id="details__pattaya">
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <button class="button--close" id="close__pattaya">Keep Exploring</button>
+          </dialog>
         </div>
-        <dialog class="dialog__city" id="details__pattaya">
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <button class="button--close" id="close__pattaya">Keep Exploring</button>
-        </dialog>
         <!-- Phra Nakhon Si Ayutthaya Card -->
-        <div class="cities__card__name">Phra Nakhon Si Ayutthaya
-          <button id="button--phra">Learn More</button>
+        <div class="cities__name">
+          <div>Phra Nakhon Si Ayutthaya
+            <button id="button--phra">Learn More</button>
+          </div>
+          <dialog class="dialog__city" id="details__phra">
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <button class="button--close" id="close__phra">Keep Exploring</button>
+          </dialog>
         </div>
-        <dialog class="dialog__city" id="details__phra">
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <button class="button--close" id="close__phra">Keep Exploring</button>
-        </dialog>
         <!-- Chiang Rai -->
-        <div class="cities__card__name">Chiang Rai
-          <button id="button--rai">Learn More</button>
+        <div class="cities__name">
+          <div>Chiang Rai
+            <button id="button--rai">Learn More</button>
+          </div>
+          <dialog class="dialog__city" id="details__rai">
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <div>Population: 100</div>
+            <button class="button--close" id="close__rai">Keep Exploring</button>
+          </dialog>
         </div>
-        <dialog class="dialog__city" id="details__rai">
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <div>Population: 100</div>
-          <button class="button--close" id="close__rai">Keep Exploring</button>
-        </dialog>
-
-  </div>
-  <!-- landmarks -->
-  <article class="details__card">
-    <ul>
-      <li> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatArunModal">Wat Arun</button>
-        <div id="myWatArunModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-          
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Wat Arun</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <img class = "modal__image" src="styles/Wat_Arun.jpg" alt="">
-                </div>
-              </div></a></li>
-      <li>
-          <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatRongKhunModal">Wat Rong Khun</button>
-          <div id="myWatRongKhunModal" class="modal fade" role="dialog">
+      </article>
+      <!-- landmarks -->
+      <article class="details__card">
+        <ul>
+          <li> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatArunModal">Wat
+              Arun</button>
+            <div id="myWatArunModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-            
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Wat Arun</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="modal__image" src="styles/Wat_Arun.jpg" alt="">
+                  </div>
+                </div></a>
+          </li>
+          <li>
+            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatRongKhunModal">Wat
+              Rong Khun</button>
+            <div id="myWatRongKhunModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -146,15 +161,16 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <img class = "modal__image" src = "styles/Wat_Rong_Khun.jpg">
+                    <img class="modal__image" src="styles/Wat_Rong_Khun.jpg">
                   </div>
                 </div>
-      </li>
-      <li>
-          <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myKTPModal">Ko Ta Pu</button>
-          <div id="myKTPModal" class="modal fade" role="dialog">
+          </li>
+          <li>
+            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myKTPModal">Ko Ta
+              Pu</button>
+            <div id="myKTPModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-            
+
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -162,15 +178,16 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <img class = "modal__image" src = "styles/KTP.jpg">
+                    <img class="modal__image" src="styles/KTP.jpg">
                   </div>
                 </div>
-      </li>
-      <li>
-          <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myHSWModal">Haew Suwat Waterfall</button>
-          <div id="myHSWModal" class="modal fade" role="dialog">
+          </li>
+          <li>
+            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myHSWModal">Haew Suwat
+              Waterfall</button>
+            <div id="myHSWModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-            
+
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -178,15 +195,16 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <img class = "modal__image" src = "styles/HSW.jpg">
+                    <img class="modal__image" src="styles/HSW.jpg">
                   </div>
                 </div>
-      </li>
-      <li>
-          <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myMayaBayModal">Maya Bay</button>
-          <div id="myMayaBayModal" class="modal fade" role="dialog">
+          </li>
+          <li>
+            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myMayaBayModal">Maya
+              Bay</button>
+            <div id="myMayaBayModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-            
+
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -194,18 +212,18 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <img class = "modal__image" src = "styles/Maya.jpg">
+                    <img class="modal__image" src="styles/Maya.jpg">
                   </div>
                 </div>
-      </li>
-    </ul>
-  </article>
+          </li>
+        </ul>
+      </article>
 
-  <article></article>
-</section>
+      <article></article>
+    </section>
 
 
-    
+
   </main>
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
