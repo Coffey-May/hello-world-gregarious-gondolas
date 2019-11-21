@@ -15,7 +15,8 @@
 <body class="germBody">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img class="navIcon" src="photos/German-Flag-icon.ico"> VayKayInt</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,15 +52,55 @@
       <!-- country name -->
     </section>
     <!-- cities landmarks and heads of state -->
-    <section>
-      <article></article>
-      <article class="details__card">
-        <h2>Landmarks of Germany</h2>
-        <ul>
+    <section class="details">
+      <article>
+        <!-- Cities -->
+        <article class="cities__card">
+          <h2>Cities of Djbouti</h2>
+          <!-- Tadjoura -->
+          <div class="cities__card__name">
+            <button id="button--tadj">Tadjoura</button>
+          </div>
+          <dialog class="dialog__city" id="details__tadj">
+            <div>Population: 14, 820</div>
+            <div>Notable attractions: Les Sables Blancs beach</div>
+            <div>must try foods: lahoh, skoudehkaris</div>
+            <div>fun fact: Tadjoura is home to the rare Francolin bird</div>
+            <button class="button--close" id="close__tadj">Keep Exploring</button>
+          </dialog>
+          <!-- Obock -->
+          <div class="cities__card__name">
+            <button id="button--obock">Obock</button>
+          </div>
+          <dialog class="dialog__city" id="details__obock">
+            <div>Population: 12,000</div>
+            <div>Notable attractions: Gulf of Aden</div>
+            <div>must try foods: fah-fah, sambuussa</div>
+            <div>fun fact: located on the northern shore of the Gulf of Tadjoura</div>
+            <button class="button--close" id="close__chiang">Keep Exploring</button>
+          </dialog>
+          <!-- Dikhil -->
+          <div class="cities__card__name">
+            <button id="button--djbouti">Djbouti</button>
+          </div>
+          <dialog class="dialog__city" id="details__djbouti">
+            <div>Population: 956,569</div>
+            <div>Notable attractions: Lake Abbe</div>
+            <div>must try food: skudahkaris</div>
+            <div>fun fact: capital city of Djibouti</div>
+            <button class="button--close" id="close__djbouti">Keep Exploring</button>
+          </dialog>
+          </div>
+
+        </article>
+      </article>
+        <article class="details__card">
+          <h2>Landmarks of Germany</h2>
+          <ul>
           <li> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myneuschwansteinCastleModal">Neuschwanstein Castle</button>
             <div id="myneuschwansteinCastleModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-
+                
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -86,9 +127,9 @@
                     <img class="modal__image" src="photos/Reichstag.jpg">
                   </div>
                 </div>
-          </li>
-          <li>
-            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myBrandenburgGateModal">Brandenburg Gate</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myBrandenburgGateModal">Brandenburg Gate</button>
             <div id="myBrandenburgGateModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
 
@@ -118,12 +159,12 @@
                     <img class="modal__image" src="photos/Mount_Zugspitze.jpg">
                   </div>
                 </div>
-          </li>
-          <li>
+              </li>
+              <li>
             <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myMonumentModal">Monument to the Battle of the Nations</button>
             <div id="myMonumentModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-
+                
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
@@ -134,22 +175,23 @@
                     <img class="modal__image" src="photos/Monument_Battle_of_the_Nations.jpg">
                   </div>
                 </div>
-          </li>
+              </li>
         </ul>
       </article>
       <article></article>
     </section>
+      
   </main>
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- put your scripts below here -->
 </body>
 
