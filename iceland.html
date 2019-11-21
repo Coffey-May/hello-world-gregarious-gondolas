@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- put your CSS Scripts below here -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/iceland.css">
 </head>
 
-<body class="thailandBody">
+<body class="dijBod">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img class="navIcon" src="photos/Thailand-Flag-icon.png"> VayKayInt</a>
+    <a class="navbar-brand" href="#"><img class="navIcon" src="photos/iceland-flag-icon.png"> VayKayInt</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,22 +22,21 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Thailand <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Thailand</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./germany.html">Germany</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/djbouti.html">Djbouti</a>
+          <a class="nav-link" href="./djbouti.html">Djbouti</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Iceland</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="./iceland.html">Iceland <span class="sr-only">(current)</a>
         </li>
       </ul>
     </div>
-    <p class="d-none d-lg-inline-block navQuote">"One of the dreams on my wishlist is to spend more time in Thailand."
-      -Kevin Kwan</p>
+    <p class="d-none d-lg-inline-block navQuote">"The most amazing thing about Iceland is not the picturesque landscape or the geo-thermal pools. It is the fact that in Iceland the national dish is cured shark." - Anonymous</p>
   </nav>
   <main>
     <section>
@@ -46,9 +45,12 @@
       <div class="picDiv">
         <center>
           <img
-            src="#"
+            src="photos/iceland-pano.jpg"
             class="picture">
+
       </div>
+
+
       <div>
         <center>
           <h1 class="countryName">I C E L A N D</h1>
@@ -59,191 +61,174 @@
     </section>
 
     <!-- cities landmarks and heads of state -->
-    <section class="details">
+    <section>
       <!-- Cities -->
-      <article class="details__card">
-        <h2>Cities of Thailand</h2>
+      <article class="cities__card">
+        <h2>Cities of Iceland</h2>
         <!-- Bangkok Card -->
-        <div class="cities__name">
-          <div>
-            <button id="button--bang">Bangkok</button>
-          </div>
-          <dialog class="dialog__city" id="details__bang">
-            <div>Population: 8.2 million</div>
-            <div>Notable attractions: Over 400 temples! Including Wat Arun</div>
-            <div>Must try foods: fried chicken, sweet potato balls, fried banana pancake</div>
-            <div>Fun Fact: Red Bull was originally made in Bangkok</div>
-            <button class="button--close" id="close__bang">Keep Exploring</button>
-          </dialog>
+        <div class="cities__card__name">Iceland city
+          <button id="button--tadj">Learn More</button>
         </div>
+        <dialog class="dialog__city" id="details__tadj">
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <button class="button--close" id="close__tadj">Keep Exploring</button>
+        </dialog>
         <!-- Chiang Mai Card -->
-        <div class="cities__name">
-            <div>
-          <button id="button--chiang">Chiang Mai</button>
+        <div class="cities__card__name">Iceland city
+          <button id="button--obock">Learn More</button>
         </div>
-        <dialog class="dialog__city" id="details__chiang">
-          <div>Population: 131, 000</div>
-          <div>Notable attractions: The striking mountain landscapes</div>
-          <div>Must try foods: Khao Soi Khun Yai, Suki Koka, Khao Soi</div>
-          <div>Fun Fact: 70% of Chiang Mai is covered by mountains and vegetation.</div>
+        <dialog class="dialog__city" id="details__obock">
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
           <button class="button--close" id="close__chiang">Keep Exploring</button>
         </dialog>
-        </div>
         <!-- Pattaya City -->
-        <div class="cities__name">
-          <div>
-            <button id="button--pattaya">Pattaya City</button>
-          </div>
-          <dialog class="dialog__city" id="details__pattaya">
-            <div>Population: 320,000</div>
-            <div>Notable attractions: The floating market</div>
-            <div>must try foods: Kai jeow, moo ping, Som Tum</div>
-            <div>Fun Fact: Pattaya is commonly referred to as 'Sin City'</div>
-            <button class="button--close" id="close__pattaya">Keep Exploring</button>
-          </dialog>
+        <div class="cities__card__name">Iceland city
+          <button id="button--dikhil">Learn More</button>
         </div>
+        <dialog class="dialog__city" id="details__dikhil">
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <button class="button--close" id="close__pattaya">Keep Exploring</button>
+        </dialog>
         <!-- Phra Nakhon Si Ayutthaya Card -->
-        <div class="cities__name">
-          <div>
-            <button id="button--phra">Phra Nakhon Si Ayutthaya</button>
-          </div>
-          <dialog class="dialog__city" id="details__phra">
-            <div>Population: 53,000</div>
-            <div>Notable attractions: Archaeological sites</div>
-            <div>must try foods: king prawns, boat noodles, ayutthaya iced coffee</div>
-            <div>fun fact: Ayutthaya is the former capital of Thailand</div>
-            <button class="button--close" id="close__phra">Keep Exploring</button>
-          </dialog>
+        <div class="cities__card__name">Iceland city
+          <button id="button--arta">Learn More</button>
         </div>
-        <!-- Chiang Rai -->
-        <div class="cities__name">
-          <div>
-            <button id="button--rai">Chiang Rai</button>
-          </div>
-          <dialog class="dialog__city" id="details__rai">
-            <div>Population: 69,000</div>
-            <div>notable attractions: The Monkey Temple</div>
-            <div>must try foods: sai ooa, nam prik, fruit juices</div>
-            <div>fun fact: Chiang Rai is known as a city of arts</div>
-            <button class="button--close" id="close__rai">Keep Exploring</button>
-          </dialog>
+        <dialog class="dialog__city" id="details__arta">
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <button class="button--close" id="close__phra">Keep Exploring</button>
+        </dialog>
+        <!-- Bangkok Card -->
+        <div class="cities__card__name">Iceland city
+          <button id="button--ali">Learn More</button>
         </div>
-      </article>
-      <!-- landmarks -->
-      <article class="details__card">
-        <h2>Landmarks of Thailand</h2>
-        <ul>
-          <li> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatArunModal">Wat
-              Arun</button>
-            <div id="myWatArunModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+        <dialog class="dialog__city" id="details__ali">
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <div>Population: 100</div>
+          <button class="button--close" id="close__rai">Keep Exploring</button>
+        </dialog>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Wat Arun</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="modal__image" src="photos/Wat_Arun.jpg" alt="">
-                  </div>
-                </div></a>
-          </li>
-          <li>
-            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatRongKhunModal">Wat
-              Rong Khun</button>
-            <div id="myWatRongKhunModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+        </div>
+        <!-- landmarks -->
+        <article>
+          <ul>
+            <li> <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatArunModal">Wat
+                Arun</button>
+              <div id="myWatArunModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Wat Rong Khun</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="modal__image" src="photos/Wat_Rong_Khun.jpg">
-                  </div>
-                </div>
-          </li>
-          <li>
-            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myKTPModal">Ko Ta
-              Pu</button>
-            <div id="myKTPModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Wat Arun</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="modal__image" src="styles/Wat_Arun.jpg" alt="">
+                    </div>
+                  </div></a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myWatRongKhunModal">Wat
+                Rong Khun</button>
+              <div id="myWatRongKhunModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Ko Ta Pu</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Wat Rong Khun</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="modal__image" src="styles/Wat_Rong_Khun.jpg">
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <img class="modal__image" src="photos/KTP.jpg">
-                  </div>
-                </div>
-          </li>
-          <li>
-            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myHSWModal">Haew Suwat
-              Waterfall</button>
-            <div id="myHSWModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+            </li>
+            <li>
+              <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myKTPModal">Ko Ta
+                Pu</button>
+              <div id="myKTPModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Haew Suwat Waterfall</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Ko Ta Pu</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="modal__image" src="styles/KTP.jpg">
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <img class="modal__image" src="photos/HSW.jpg">
-                  </div>
-                </div>
-          </li>
-          <li>
-            <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myMayaBayModal">Maya
-              Bay</button>
-            <div id="myMayaBayModal" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+            </li>
+            <li>
+              <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myHSWModal">Haew Suwat
+                Waterfall</button>
+              <div id="myHSWModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Maya Bay</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Haew Suwat Waterfall</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="modal__image" src="styles/HSW.jpg">
+                    </div>
                   </div>
-                  <div class="modal-body">
-                    <img class="modal__image" src="photos/Maya.jpg">
+            </li>
+            <li>
+              <button type="button" class="btn btn-info btn" data-toggle="modal" data-target="#myMayaBayModal">Maya
+                Bay</button>
+              <div id="myMayaBayModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Maya Bay</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="modal__image" src="styles/Maya.jpg">
+                    </div>
                   </div>
-                </div>
-          </li>
-        </ul>
-      </article>
-
-      <article class = "details__card">
-        <h4>Maha Vajiralongkorn: King of Thailand</h4>
-          <img src="Photos/ThailandKing.jpeg" alt="King of Thailand">
-
+            </li>
+          </ul>
         </article>
-    </section>
 
- 
+        <article></article>
+    </section>
 
 
 
   </main>
   <!-- Bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <!-- put your scripts below here -->
-  <script type="module" src="scripts/thailand/main.js"></script>
 </body>
 
 </html>
