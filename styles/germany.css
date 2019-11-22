@@ -3,3 +3,6 @@
   height: auto;
 }
 
+.germBody {
+  background: linear-gradient(white,white,white,slategray,gray,rgb(51, 50, 50))
+}
