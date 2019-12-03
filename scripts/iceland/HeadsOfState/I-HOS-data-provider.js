@@ -3,11 +3,11 @@ const headsOfState =
         {
             image: "./Photos/iceKing.jpeg",
             name: "Guðni Th. Jóhannesson",
-            title: "Emporer",
+            title: "Over-Lord",
             age: "Unbound by time and space"
         },
         {
-            image: "./Photos/howdy.jpeg",
+            image: "./Photos/iceKing2.jpeg",
             name: "Ólafur Ragnar Grímsson",
             title: "Ministry of Grooviness",
             age: 7
