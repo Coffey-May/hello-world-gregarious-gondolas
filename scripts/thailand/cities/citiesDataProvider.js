@@ -2,6 +2,7 @@ const citiesCollection = [
   {
     id: "Bangkok",
     name: "Bangkok",
+    image: "./Photos/bangkok.jpg",
     population:  "8.2 million",
     attractions: "Over 400 temples! Including Wat Arun!",
     food: "fried chicken, sweet potato balls, fried banana pancake",
@@ -19,6 +20,7 @@ const citiesCollection = [
   {
     id: "PattayaCity",
     name: "Pattaya City",
+    image: "./Photos/berlin.jpg",
     population: "320,000",
     attractions: "The floating market",
     food: "Kai jeow, moo ping, Som Tum",
@@ -27,6 +29,7 @@ const citiesCollection = [
   {
     id: "PhraNakhonSiAyutthaya",
     name: "Phra Nakhon Si Ayutthaya",
+    image: "./Photos/berlin.jpg",
     population: "53,000",
     attractions: "Archaeological sites",
     food: "king prawns, boat noodles, ayutthaya iced coffee",
@@ -35,6 +38,7 @@ const citiesCollection = [
   {
     id: "ChiangRai",
     name: "Chiang Rai",
+    image: "./Photos/berlin.jpg",
     population: "69,000",
     attractions: "The Monkey Temple",
     food: "sai ooa, nam prik, fruit juices",
