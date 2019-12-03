@@ -1,39 +1,24 @@
 const initializeDetailButtonEvents = () => {
-  const allCloseButtons = document.querySelectorAll(".button--close")
-
-  for (const btn of allCloseButtons) {
-      btn.addEventListener(
-          "click",
-          theEvent => {
-              const dialogElement = theEvent.target.parentNode
-              dialogElement.close()
-          }
-      )
-  }
-//Details on berlin
-  document.querySelector("#button--berlin").addEventListener(
-      "click",
-      theClickEvent => {
-          const theDialog = document.querySelector("#details__berlin")
-          theDialog.showModal()
-      }
-  )
-//Details on Hamburg
-  document.querySelector("#button--ham").addEventListener(
-      "click",
-      theClickEvent => {
-          const theDialog = document.querySelector("#details__ham")
-          theDialog.showModal()
-      }
-  )
-//Details on Nuremburg
-  document.querySelector("#button--nurem").addEventListener(
-      "click",
-      theClickEvent => {
-          const theDialog = document.querySelector("#details__nurem")
-          theDialog.showModal()
-      }
-  )
-
-}
-export default initializeDetailButtonEvents
+    // CAN'T TOUCH THIS - START
+    const allCloseButtons = document.querySelectorAll(".button--close");
+    for (const btn of allCloseButtons) {
+      btn.addEventListener("click", theEvent => {
+        const dialogElement = theEvent.target.parentNode;
+        dialogElement.close();
+      });
+    }
+   // Get a reference to all buttons that start with "button--"
+   const allDetailButtons = document.querySelectorAll("button[id^='button--']")
+   // Add an event listener to each one
+   for (const btn of allDetailButtons) {
+       btn.addEventListener(
+           "click",
+           theEvent => {
+               const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+               const theDialog = document.querySelector(dialogSiblingSelector)
+               theDialog.showModal()
+           }
+       )
+   }
+  };
+  export default initializeDetailButtonEvents;
