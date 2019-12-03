@@ -1,12 +1,82 @@
 .navIcon {
   width: 27px;
   margin-bottom: 6px;
+  padding-top: 10px;
 }
 
 .navQuote {
   display: inline-block;
-  text-align: center;
   font-style: italic;
-  margin-bottom: 0px;
   color: white;
+  text-align: center;
+  width: 60%;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  float: left;
+  display: block;
+  padding: 16px 8px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hover-link:hover {
+  color: black;
+  background: white;
+}
+
+.hover-link:link {
+  color: white;
+}
+
+.hover-link:visited {
+  color: white;
+}
+
+.hover-link:visited:hover {
+  color: black;
+}
+
+.navbarDiv {
+  display: block;
+  background-color: black;
+}
+
+.navbar-brand {
+  float: left;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 8px;
+}
+
+.VKI {
+  color: white;
+}
+
+nav {
+  padding-left: 5px;
+}
+
+.active {
+  color: black;
+  background-color: silver;
+}
+
+.active:visited {
+  color: black;
 }
