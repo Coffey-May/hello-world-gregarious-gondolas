@@ -11,7 +11,7 @@ const citiesCollection = [
   {
     id: "ChiangMai",
     name: "Chiang Mai",
-    image: "./Photos/berlin.jpg",
+    image: "./Photos/chiangmai.jpg",
     population: "131, 000",
     attractions: "The striking mountain landscapes",
     food: "Khao Soi Khun Yai, Suki Koka, Khao Soi",
@@ -20,7 +20,7 @@ const citiesCollection = [
   {
     id: "PattayaCity",
     name: "Pattaya City",
-    image: "./Photos/berlin.jpg",
+    image: "./Photos/pattaya.jpg",
     population: "320,000",
     attractions: "The floating market",
     food: "Kai jeow, moo ping, Som Tum",
@@ -29,7 +29,7 @@ const citiesCollection = [
   {
     id: "PhraNakhonSiAyutthaya",
     name: "Phra Nakhon Si Ayutthaya",
-    image: "./Photos/berlin.jpg",
+    image: "./Photos/ayut.jpg",
     population: "53,000",
     attractions: "Archaeological sites",
     food: "king prawns, boat noodles, ayutthaya iced coffee",
@@ -38,7 +38,7 @@ const citiesCollection = [
   {
     id: "ChiangRai",
     name: "Chiang Rai",
-    image: "./Photos/berlin.jpg",
+    image: "./Photos/rai.jpg",
     population: "69,000",
     attractions: "The Monkey Temple",
     food: "sai ooa, nam prik, fruit juices",
