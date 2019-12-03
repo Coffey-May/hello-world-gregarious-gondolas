@@ -10,6 +10,7 @@ const citiesCollection = [
   {
     id: "ChiangMai",
     name: "Chiang Mai",
+    image: "./Photos/berlin.jpg",
     population: "131, 000",
     attractions: "The striking mountain landscapes",
     food: "Khao Soi Khun Yai, Suki Koka, Khao Soi",
