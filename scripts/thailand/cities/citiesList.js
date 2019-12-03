@@ -6,7 +6,7 @@ const content = document.querySelector(".cities");
 const cities = useCities();
 
 content.innerHTML +=
-  `
+  `<h3>Cities of Thailand</h3>
   ${
     cities.map(
       (city) => {

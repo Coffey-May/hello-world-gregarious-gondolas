@@ -8,7 +8,7 @@ const landmarks = useLandmarks()
 
   contentElement.innerHTML +=
     `
-    <h2>Landmarks of Thailand</h2>
+    <h3>Landmarks of Thailand</h3>
     ${
       landmarks.map(
         (landmark) => {

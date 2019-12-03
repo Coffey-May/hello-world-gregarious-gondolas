@@ -2,6 +2,7 @@ const citiesCollection = [
   {
     id: "Reykjavik",
     name: "Reykjavik",
+    image: "./Photos/rey.jpg",
     population:  "122,853",
     attractions: "Hallgrimskirkja Cathedral",
     food: "Lobster Roll",

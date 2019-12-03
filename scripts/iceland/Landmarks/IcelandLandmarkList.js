@@ -9,7 +9,7 @@ const landmarks = useLandmarks()
 
   contentElement.innerHTML +=
     `
-    <h2>Landmarks of Iceland</h2>
+    <h3>Landmarks of Iceland</h3>
     ${
       landmarks.map(
         (landmark) => {
