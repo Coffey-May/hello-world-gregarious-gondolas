@@ -1,3 +1,3 @@
-import initializeDetailButtonEvents from './dialogs.js'
+import LandmarkListComponent from "./Landmarks/ThailandLandmarkList.js";
 
-initializeDetailButtonEvents()
+LandmarkListComponent()
