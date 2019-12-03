@@ -6,10 +6,11 @@ const LandmarkListComponent = () =>{
 
 const contentElement = document.querySelector(".landmarklist")
 const landmarks = useLandmarks()
+console.log("landmarks being sent in", landmarks)
 
   contentElement.innerHTML +=
     `
-    <h2>Landmarks of Germany</h2>
+    <h3>Landmarks of Germany</h3>
     ${
       landmarks.map(
         (landmark) => {
