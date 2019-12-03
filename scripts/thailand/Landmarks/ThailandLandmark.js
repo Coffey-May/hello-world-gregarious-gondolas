@@ -5,7 +5,7 @@ const landmarkComponent = (landmark) => {
     <button id="button--${landmark.id}">${landmark.name}</button>
   <dialog class="dialog__landmark">
     <h3>${landmark.name}</h3>
-    <img src="${landmark.img}"><br>
+    <img class="landmarkdialogpic" src="${landmark.img}"><br>
     <button class="button--close">Keep Exploring</button>
   </dialog>
 </div>
