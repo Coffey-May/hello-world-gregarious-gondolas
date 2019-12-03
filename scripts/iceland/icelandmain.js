@@ -1,3 +1,4 @@
 import initializeDetailButtonEvents from './dialogsiceland.js'
-
-initializeDetailButtonEvents()  
+import citiesListComponent from './cities/citiesList.js'
+citiesListComponent()
+initializeDetailButtonEvents()
