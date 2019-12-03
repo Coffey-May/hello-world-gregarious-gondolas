@@ -2,6 +2,7 @@ const citiesCollection = [
   {
     id: "Berlin",
     name: "Berlin",
+    image: "./photos/berlin.jpg",
     population:  "3.75 million",
     attractions: "Brandenburg Gate, Berlin Wall",
     food: "beer, brautwurst",
@@ -9,6 +10,7 @@ const citiesCollection = [
   },
   {
     id: "Hamburg",
+    image: "./Photos/hamburg.jpg",
     name: "Hamburg",
     population: "1.8 million",
     attractions: "Speicherstadt",
@@ -17,6 +19,7 @@ const citiesCollection = [
   },
   {
     id: "Nuremburg",
+    image: "./Photos/nuremberg.jpg",
     name: "Nuremburg",
     population: "515,201",
     attractions: "Imperial Castle of Nuremburg",
