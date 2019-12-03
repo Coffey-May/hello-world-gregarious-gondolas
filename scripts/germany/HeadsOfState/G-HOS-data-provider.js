@@ -1,13 +1,13 @@
 const headsOfState =
     [
         {
-            image: "./Photos/blobby.jpg",
+            image: "./Photos/germQueen.jpeg",
             name: "Angela Merkel",
             title: "Chancellor",
             age: 65
         },
         {
-            image: "./Photos/germanPres.jpeg",
+            image: "./Photos/germKing.jpeg",
             name: "Frank-Walter Steinmeier",
             title: "President",
             age: 4217
