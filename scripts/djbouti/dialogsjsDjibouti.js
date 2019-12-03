@@ -1,39 +1,24 @@
 const initializeDetailButtonEvents = () => {
-    const allCloseButtons = document.querySelectorAll(".button--close")
-  
+    // CAN'T TOUCH THIS - START
+    const allCloseButtons = document.querySelectorAll(".button--close");
     for (const btn of allCloseButtons) {
-        btn.addEventListener(
-            "click",
-            theEvent => {
-                const dialogElement = theEvent.target.parentNode
-                dialogElement.close()
-            }
-        )
+      btn.addEventListener("click", theEvent => {
+        const dialogElement = theEvent.target.parentNode;
+        dialogElement.close();
+      });
     }
-  //Details on Bangkok
-    document.querySelector("#button--tadj").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details__tadj")
-            theDialog.showModal()
-        }
-    )
-  //Details on Chiang Mai
-    document.querySelector("#button--obock").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details__obock")
-            theDialog.showModal()
-        }
-    )
-  //Details on Pattaya City
-    document.querySelector("#button--djbouti").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details__djbouti")
-            theDialog.showModal()
-        }
-    )
-  
-  }
-  export default initializeDetailButtonEvents
+   // Get a reference to all buttons that start with "button--"
+   const allDetailButtons = document.querySelectorAll("button[id^='button--']")
+   // Add an event listener to each one
+   for (const btn of allDetailButtons) {
+       btn.addEventListener(
+           "click",
+           theEvent => {
+               const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+               const theDialog = document.querySelector(dialogSiblingSelector)
+               theDialog.showModal()
+           }
+       )
+   }
+  };
+  export default initializeDetailButtonEvents;
