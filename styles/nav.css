@@ -18,11 +18,6 @@
   padding: 0;
 }
 
-.active {
-  background-color: silver;
-  color: black;
-}
-
 .nav-item {
   display: inline;
 }
@@ -30,10 +25,27 @@
 .nav-link {
   float: left;
   display: block;
-  padding: 8px;
+  padding: 16px 8px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 16px;
+}
+
+.hover-link:hover {
+  color: black;
+  background: white;
+  border-radius: 10px;
+}
+
+.hover-link:link {
+  color: white;
+}
+
+.hover-link:visited {
+  color: white;
+}
+
+.hover-link:visited:hover {
+  color: black;
 }
 
 .navbarDiv {
@@ -55,4 +67,13 @@ main {
 
 .VKI {
   color: white;
+}
+
+nav {
+  padding-left: 5px;
+}
+
+li .active {
+  background-color: silver;
+  color: black;
 }
