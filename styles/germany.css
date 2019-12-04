@@ -3,7 +3,7 @@
   background: linear-gradient(white,white,white,slategray,gray,rgb(51, 50, 50))
 }
 
-h1 {
+.countrynameG {
   display: inline-block;
     overflow: hidden;
   letter-spacing: .5em;
@@ -14,7 +14,7 @@ h1 {
   text-transform: uppercase;
   
   overflow: hidden;
-  background: linear-gradient(90deg, #000, rgb(228, 50, 50), #000);
+  background: linear-gradient(90deg, #000, rgb(92, 85, 85), #000);
   background-repeat: no-repeat;
  
  
@@ -22,7 +22,7 @@ h1 {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-}
+
 
 h4 {
   display: inline-block;

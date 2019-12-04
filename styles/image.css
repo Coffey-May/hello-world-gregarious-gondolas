@@ -25,7 +25,7 @@ img {
     background: linear-gradient(180deg,white,rgb(233, 233, 215),rgb(230, 230, 190), rgb(240, 240, 172), #f7ed58, #f03d14, darkred), rgb(80, 3, 3);
  }
 
-  .countryName {
+  .countryNameT {
     display: inline-block;
     overflow: hidden;
      font-weight: 900;
