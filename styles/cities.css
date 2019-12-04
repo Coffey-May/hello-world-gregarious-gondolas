@@ -1,0 +1,28 @@
+
+.dialog--city{
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px  black;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: grey;  
+  text-align: center;
+}
+
+.city--button{
+  background-color: transparent;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border: 0px;
+  cursor: pointer;
+}
+
+.city--close{
+  cursor: grab;
+  background-color: transparent;
+  margin-top: 15px;
+  color: white;
+  text-shadow: 3px 3px 4px #000000;
+  font-weight: 750;
+  box-shadow: 2px 2px  black;         
+}
