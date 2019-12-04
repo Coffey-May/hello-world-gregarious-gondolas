@@ -12,10 +12,22 @@
 h1 {
   letter-spacing: .5em;
   -webkit-animation: zoomin 5s 1;
-  animation-iteration-count:infinite;
+  animation-fill-mode: forwards;
+
 }
 
 h4 {
   -webkit-animation: zoomin 5s 1;
-  animation-iteration-count:infinite;
+  animation-fill-mode: forwards;
+}
+
+.picDiv {
+  display: inline-block;
+  overflow: hidden;
+}
+.germanyPic {
+  display: block;
+  -webkit-animation: zoomin 10s 1;
+  animation-fill-mode: forwards;
+  transition: all 0.3s;
 }

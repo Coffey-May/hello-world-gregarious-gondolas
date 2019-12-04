@@ -30,13 +30,15 @@
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      letter-spacing: .75em;
      -webkit-animation: zoomin 5s 1;
-     animation-iteration-count:infinite;
+     animation-fill-mode: forwards;
+   
  }
 
  h4 {
      font-style: italic;
      -webkit-animation: zoomin 5s 1;
-     animation-iteration-count:infinite;
+     animation-fill-mode: forwards;
+   
  }
  
  .kingPic {
