@@ -6,7 +6,6 @@ const LandmarkListComponent = () =>{
 
 const contentElement = document.querySelector(".landmarklist")
 const landmarks = useLandmarks()
-console.log("landmarks being sent in", landmarks)
 
   contentElement.innerHTML +=
     `

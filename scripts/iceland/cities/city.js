@@ -8,7 +8,7 @@ const citiesComponent = (city) => {
             <div>Attractions: ${city.attractions}</div>
             <div>Food: ${city.food}</div>
             <div>Fact: ${city.fact}</div>
-            <button class="button--close">Keep Exploring</button>
+            <button class="button--close city--close">Keep Exploring</button>
         </dialog>
     </div>
 `
