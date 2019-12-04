@@ -13,9 +13,11 @@
 }
 
 .navbar-nav {
+  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background: black;
 }
 
 .nav-item {
@@ -69,7 +71,8 @@ main {
 }
 
 nav {
-  padding-left: 5px;
+  width: 100vw;
+  background: black
 }
 
 .active {
@@ -79,4 +82,15 @@ nav {
 
 .active:visited {
   color: black;
+}
+
+.picture {
+  margin: 0px;
+}
+
+@media (max-width: 1050px) {
+  .navQuote {
+    width: 100%;
+    text-align: right;
+  }
 }
