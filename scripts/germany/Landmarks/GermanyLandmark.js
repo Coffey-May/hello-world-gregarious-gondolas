@@ -1,12 +1,10 @@
 const landmarkComponent = (landmark) => {
-  console.log(landmark)
   return `
   <div class="landmark__${landmark.class}">
-    <button id="button--${landmark.id}">${landmark.name}</button>
+    <button id="button--${landmark.id}" class="button--landmark">${landmark.name}</button>
   <dialog class="dialog__landmark">
-    <h3>${landmark.name}</h3>
-    <img class="landmarkdialogpic" src="${landmark.img}"><br>
-    <button class="button--close">Close Dialog</button>
+    <h3 class="dialog__header">${landmark.name}</h3>
+    <img class="landmarkdialogpic button--close" src="${landmark.img}"><br>
   </dialog>
 </div>
   `

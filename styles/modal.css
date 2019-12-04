@@ -1,10 +1,25 @@
-.modal__image{
-  width: 100%;
-}
-.modal-title{
-  text-align: center;
-}
 
-.btn-info {
-  margin: 3px;
+.landmarkdialogpic{
+max-width: 100%;
+box-shadow: 2px 2px 4px 4px goldenrod;
+cursor: pointer;
+}
+.dialog__landmark{
+  max-width: 50%;
+  border-style: hidden;
+  background-color: transparent;
+}
+.dialog__header{
+  color: white;
+}
+.button--landmark{
+  background-color: transparent;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border: 0px;
+  cursor: pointer;
+}
+.dialog__Djiboutilandmark{
+color:goldenrod;
+text-shadow: 2px 2px 4px lightgoldenrodyellow;
 }
