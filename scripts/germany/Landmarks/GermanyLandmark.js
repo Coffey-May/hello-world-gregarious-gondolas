@@ -1,5 +1,4 @@
 const landmarkComponent = (landmark) => {
-  console.log(landmark)
   return `
   <div class="landmark__${landmark.class}">
     <button id="button--${landmark.id}" class="button--landmark">${landmark.name}</button>
