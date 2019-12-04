@@ -1,7 +1,8 @@
-.picDiv {
+ .picDiv {
     justify-content: center;
     max-width:100vw;
     max-height: 100vw;
+   
  
  }
  
@@ -27,4 +28,4 @@
  
  .kingPic {
      width:80px;
- }
+ } 
