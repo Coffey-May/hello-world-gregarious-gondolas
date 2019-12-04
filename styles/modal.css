@@ -6,7 +6,6 @@ box-shadow: 2px 2px 4px 4px goldenrod;
 .dialog__landmark{
   max-width: 50%;
   border-style: hidden;
-  
   background-color: transparent;
 }
 .dialog__header{
