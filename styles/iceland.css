@@ -6,6 +6,7 @@
 .countryName {
     display: inline-block;
     overflow: hidden;
+    letter-spacing: .5em;
     -webkit-animation: zoomin 5s .5;
     animation-fill-mode: forwards;
 
@@ -23,7 +24,7 @@
 }
    
    
-}
+
 
 h4 {
     display: inline-block;
