@@ -1,9 +1,3 @@
-.germanyPic {
-  max-width: 100vw;
-  height: auto;
-  
-  
-}
 
 .germBody {
   background: linear-gradient(white,white,white,slategray,gray,rgb(51, 50, 50))
@@ -21,13 +15,20 @@ h4 {
   animation-fill-mode: forwards;
 }
 
-.picDiv {
+/* .picDiv {
+  
   display: inline-block;
   overflow: hidden;
+  
 }
 .germanyPic {
-  display: block;
+  width:100vw;
   -webkit-animation: zoomin 10s 1;
   animation-fill-mode: forwards;
   transition: all 0.3s;
+  
+} */
+
+.germanyPic {
+   width:100vw;
 }

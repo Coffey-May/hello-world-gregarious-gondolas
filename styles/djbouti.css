@@ -18,9 +18,9 @@ h4 {
     display: inline-block;
     overflow: hidden;
   }
-  .picture {
+  /* .picture {
     display: block;
     -webkit-animation: zoomin 10s 1;
     animation-fill-mode: forwards;
     transition: all 0.3s;
-  }
+  } */
