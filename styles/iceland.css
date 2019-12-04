@@ -22,8 +22,13 @@ h4 {
     overflow: hidden;
   }
   
- /* .picture {
+  /* .pictureIce {
     display: block;
     -webkit-animation: zoomin 10s 1;
     animation-fill-mode: forwards;
-    transition: all 0.3s; */
+    transition: all 0.3s;  */
+
+
+    .pictureIce {
+        width:100vw;
+    }
