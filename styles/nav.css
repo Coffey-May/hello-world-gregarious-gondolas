@@ -2,6 +2,7 @@
   width: 27px;
   margin-bottom: 6px;
   padding-top: 10px;
+  padding-left: 5px
 }
 
 .navQuote {
@@ -63,7 +64,7 @@ body {
 }
 
 main {
-  margin: 8px;
+  margin: 4px;
 }
 
 .VKI {
@@ -71,7 +72,7 @@ main {
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   background: black
 }
 
@@ -88,9 +89,11 @@ nav {
   margin: 0px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1057px) {
   .navQuote {
-    width: 100%;
-    text-align: right;
+    visibility: hidden;
+  }
+  nav {
+    max-height: 50.4px;
   }
 }
