@@ -4,4 +4,11 @@
 
 .countryName {
     letter-spacing: .75em;
+    -webkit-animation: zoomin 5s 1;
+    animation-iteration-count:infinite;
+}
+
+h4 {
+    -webkit-animation: zoomin 5s 1;
+    animation-iteration-count:infinite;
 }

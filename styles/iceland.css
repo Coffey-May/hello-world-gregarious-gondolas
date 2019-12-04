@@ -2,3 +2,14 @@
 .iceBod {
     background: linear-gradient(white,white,white,white,lightblue,green,rgb(12, 71, 12),navy);
 }
+
+.countryName {
+    letter-spacing: 2em;
+    -webkit-animation: zoomin 5s 1;
+    animation-iteration-count:infinite;
+}
+
+h4 {
+    -webkit-animation: zoomin 5s 1;
+    animation-iteration-count:infinite;
+}
