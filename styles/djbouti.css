@@ -6,10 +6,25 @@
     letter-spacing: .75em;
     -webkit-animation: zoomin 5s 1;
     animation-fill-mode: forwards;
-    
+
+    position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, rgb(133, 91, 14), #000);
+  background-repeat: no-repeat;
+ 
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+    
+
 
 h4 {
+    display: inline-block;
+    overflow: hidden;
     -webkit-animation: zoomin 5s 1;
     animation-fill-mode: forwards;
     
@@ -18,9 +33,9 @@ h4 {
     display: inline-block;
     overflow: hidden;
   }
-  /* .picture {
+   .picture {
     display: block;
     -webkit-animation: zoomin 10s 1;
     animation-fill-mode: forwards;
     transition: all 0.3s;
-  } */
+  } 

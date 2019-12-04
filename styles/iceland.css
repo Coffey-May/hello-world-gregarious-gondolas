@@ -4,14 +4,30 @@
 }
 
 .countryName {
-   
+    display: inline-block;
+    overflow: hidden;
     -webkit-animation: zoomin 5s .5;
     animation-fill-mode: forwards;
+
+    position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  
+  overflow: hidden;
+  background: linear-gradient(90deg, #000,navy, rgb(26, 212, 9),navy, #000);
+  background-repeat: no-repeat;
+ 
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
    
    
 }
 
 h4 {
+    display: inline-block;
+    overflow: hidden;
     -webkit-animation: zoomin 3s 1;
     animation-fill-mode: forwards;
     
@@ -22,12 +38,12 @@ h4 {
     overflow: hidden;
   }
   
-  /* .pictureIce {
-    display: block;
+   .pictureIce {
+     
     -webkit-animation: zoomin 10s 1;
     animation-fill-mode: forwards;
-    transition: all 0.3s;  */
-
+    transition: all 0.3s;  
+   }
 
     .pictureIce {
         width:100vw;

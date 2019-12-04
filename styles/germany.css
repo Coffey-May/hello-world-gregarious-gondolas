@@ -4,24 +4,42 @@
 }
 
 h1 {
+  display: inline-block;
+    overflow: hidden;
   letter-spacing: .5em;
   -webkit-animation: zoomin 5s 1;
   animation-fill-mode: forwards;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, rgb(228, 50, 50), #000);
+  background-repeat: no-repeat;
+ 
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
 
 }
 
 h4 {
+  display: inline-block;
+    overflow: hidden;
   -webkit-animation: zoomin 5s 1;
   animation-fill-mode: forwards;
 }
 
-/* .picDiv {
+ .picDiv {
   
   display: inline-block;
   overflow: hidden;
   
 }
 .germanyPic {
+  display: inline-block;
+    overflow: hidden;
   width:100vw;
   -webkit-animation: zoomin 10s 1;
   animation-fill-mode: forwards;
