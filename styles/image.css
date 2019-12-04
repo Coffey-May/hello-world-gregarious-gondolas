@@ -1,3 +1,5 @@
+ 
+
  .picDiv {
     justify-content: center;
     width:100vw;
@@ -23,16 +25,42 @@ img {
     background: linear-gradient(180deg,white,rgb(233, 233, 215),rgb(230, 230, 190), rgb(240, 240, 172), #f7ed58, #f03d14, darkred), rgb(80, 3, 3);
  }
 
-  .countryName {
+  .countryNameT {
+    display: inline-block;
+    overflow: hidden;
      font-weight: 900;
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      letter-spacing: .75em;
      -webkit-animation: zoomin 5s 1;
      animation-fill-mode: forwards;
+     
+        position: relative;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, rgb(228, 50, 50), #000);
+        background-repeat: no-repeat;
+       
+        animation: animate 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      }
+      
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
    
  } 
 
  h4 {
+    display: inline-block;
+    overflow: hidden;
      font-style: italic;
      -webkit-animation: zoomin 5s 1;
      animation-fill-mode: forwards;
