@@ -3,7 +3,7 @@ const citiesComponent = (city) => {
     <div class="city">
         <button id="button--${city.id}"  class="city--button">${city.name}</button>
         <dialog class="dialog--city" id="details--${city.id}">
-            <img src="${city.image}">
+            <img class="cityimage" src="${city.image}">
             <div>Population: ${city.population}</div>
             <div>Attractions: ${city.attractions}</div>
             <div>Food: ${city.food}</div>
