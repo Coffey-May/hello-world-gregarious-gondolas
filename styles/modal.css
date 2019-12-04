@@ -2,6 +2,7 @@
 .landmarkdialogpic{
 max-width: 100%;
 box-shadow: 2px 2px 4px 4px goldenrod;
+cursor: pointer;
 }
 .dialog__landmark{
   max-width: 50%;
@@ -16,6 +17,7 @@ box-shadow: 2px 2px 4px 4px goldenrod;
   color: white;
   text-shadow: 2px 2px 4px #000000;
   border: 0px;
+  cursor: pointer;
 }
 .dialog__Djiboutilandmark{
 color:goldenrod;
